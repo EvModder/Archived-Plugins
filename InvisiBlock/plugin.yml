@@ -1,0 +1,16 @@
+name: InvisiBlock
+main: Evil_Code_InvisiBlock.InvisiBlock
+version: 1.0
+
+commands:
+   magicbone:
+      description: Gives a MagicBone used for setting vanished blocks
+      usage: /magicbone
+      aliases: [getbone, vanishblock, invisiblock]
+      permission: evp.invisiblock.vanishblock
+      permission-message: You do not have permission to do this.
+
+permissions:
+   evp.invisiblock.vanishblock:
+        description: Permission to vanish blocks (by shift-clicking them when holding a bone with lore)
+        default: true

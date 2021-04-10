@@ -1,0 +1,15 @@
+name: GrowMoss
+main: Evil_Code_GrowMoss.GrowMoss
+version: 1.0
+
+commands:
+   moss:
+      description: Toggle moss-growth on/off.
+      usage: /moss [on/off|toggle]
+      permission: GrowMoss.onoff
+      permission-message: The moss is greener on the admin's side...
+
+permissions:
+   GrowMoss.onoff:
+        description: Permission to disable/enable moss-growth
+        default: op

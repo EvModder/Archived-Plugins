@@ -1,0 +1,20 @@
+name: GhastPVP
+main: Evil_Code_GhastPVP.GhastPVP
+version: 1.0
+      
+commands:
+   ghastpvp-restart:
+      description: Command to spawn a fresh set of ghasts.
+      usage: /ghastpvp-restart
+      aliases: [gpvp,ghastpvp,gpvprestart,gpvpr]
+      permission: GhastPVP.restart
+      permission-message: You do not have permission to do this.
+      
+permissions:
+   GhastPVP.restart:
+        description: Spawns a new set of ghasts
+        default: false
+        
+   GhastPVP.instantkill:
+        description: Always die when hit by another player's  fireball
+        default: true

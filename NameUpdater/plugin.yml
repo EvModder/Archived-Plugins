@@ -1,0 +1,5 @@
+name: NameUpdater
+main: Evil_Code_NameUpdater.NameUpdater
+Author: Evil_Witchdoctor
+version: 1.0
+softdepend: [Lockette,ChestShop,Factions,uSkyBlock]

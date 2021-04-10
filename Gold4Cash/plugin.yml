@@ -1,0 +1,35 @@
+name: Gold4Cash
+main: Evil_Code_Gold4Cash.Gold4Cash
+version: 1.1
+    
+commands:
+   Gold4Cash:
+      description: Disable/Enable the plugin
+      usage: /gold4cash [on/off/(toggle)]
+      permission: onoff
+      permission-message: Op stands for Opulent.. JK and you're not one ;D    
+
+permissions:
+   Gold4Cash.*:
+      description: All plugin-management permissions.
+      children:
+            Gold4Cash.sell: true
+            Gold4Cash.buy: true
+            Gold4Cash.onoff: true
+            Gold4Cash.other: true
+
+   Gold4Cash.sell:
+        description: Sell items for gold from ChestShops.
+        default: true
+
+   Gold4Cash.buy:
+        description: Buy items with gold from ChestShops.
+        default: true
+
+   Gold4Cash.onoff:
+        description: Disable/Enable the plugin without restarting the server.
+        default: op
+
+   Gold4Cash.others:
+        description: Set up ChestShops for other players.
+        default: false

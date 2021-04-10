@@ -1,0 +1,15 @@
+name: BigPet
+main: Evil_Code_BigPet.BigPet
+version: 1.0
+
+commands:
+   bigpet:
+      description: Set the owner of the BigPet
+      usage: /bigpet [player name]
+      permission: evp.BigPet.setowner
+      permission-message: You do not own a Bigpet!
+      
+permissions:
+   evp.BigPet.setowner:
+        description: Set the owner of the BigPet
+        default: false

@@ -1,0 +1,37 @@
+name: EvKitPvP
+main: Evil_Code_EvKits.EvKits
+Author: EvModder
+version: 1.2.2
+depend: [WorldEdit]
+
+commands:
+   evkit:
+      description: Get a kit from the list.
+      usage: /evkit [Name]
+      aliases: [kit,pvpkit,evpvpkit]
+      permission: evp.evkit.kitcommand
+      permission-message: You do not have permission to do this.
+      
+   setarena:
+      description: Set a selection as an Arena.
+      usage: /set-arena [Name]
+      aliases: [arenaset, set-arena, claimarena]
+      permission: evp.evkit.setarena
+      permission-message: You do not have permission to do this.
+
+permissions:        
+   evp.evkit.kitcommand:
+        description: Access to the /EvKit command.
+        default: op
+        
+   evp.evkit.kitcommand.anywhere:
+        description: Access to the /EvKit command from any location.
+        default: false
+        
+   evp.evkit.nodeathdrops:
+        description: Keep items on death.
+        default: false
+        
+   evp.evkit.setarena:
+        description: Keep items on death.
+        default: false

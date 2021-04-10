@@ -1,0 +1,30 @@
+# Only drop heads for mobs killed directly by the player
+player-kills-only: true
+
+# Only drop player heads (you can also set this in "default chances" file
+# by making all mobs have a 0% chance to drop a head except players)
+player-heads-only: false
+
+# Percent increase in chance in drop chance per looting level
+looting-bonus: 0.4
+
+# Uses non-linear (taylor modifiers) when calculating effects of modifiers. 
+use-taylor-modifiers: true
+
+# Only drop heads when the player/mob is holding an axe
+must-use-axe: false
+
+# List of tools the player must be using one of to be able to get a head
+# If "must-use-axe" is enabled, this list will be ignored
+must-use:
+#  - IRON_SWORD
+#  - DIAMOND_AXE
+#  - WOOD_HOE
+# etc.
+
+# Tools that have a higher chance of beheading (as opposed to other tools)
+# The number is the increase in drop chance when using that tool
+speific-tool-modifiers:
+  DIAMOND_AXE: 3
+  DIAMOND_SWORD: 0.2
+  IRON_AXE: 0.25
